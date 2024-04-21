@@ -1,9 +1,5 @@
 # Data Engineering Challenge
 
-## Description:
-This code is designed to compute the moving average of a dataset containing translation delivery durations. The input dataset is expected to be in JSON format, where each line represents a valid JSON object with a timestamp and a duration.
-<br> <br>
-
 ## Assumptions:
 1. The input file is expected to be in JSON format, where each line represents a valid JSON object with a timestamp and a duration.
 2. Each JSON object should contain the following fields:
@@ -16,9 +12,27 @@ This code is designed to compute the moving average of a dataset containing tran
 1. **Limit Date Argument:**
    - An optional third argument, `--limit_date`, allows filtering the oldest date for computing the moving average.
 2. **Use of Pandas Package:**
-   - Utilizes the pandas package for efficient data manipulation. The dataset is converted into a DataFrame, and the datetime column is set as the index for optimized filtering.
+   - Uses the pandas package for efficient data manipulation. The dataset is converted into a DataFrame, and the datetime column is set as the index for optimized filtering.
 3. **Output File Saving:**
    - The script creates an "Outputs" directory on the desktop to save the output JSON file, ensuring organized output storage.
 <br> <br>
-  
-## Implementation Options:
+
+## Requirements:
+   - Python 3.x
+   - `pandas` library
+<br> <br>
+
+## Execution Guide:
+To use the script, go to the script location and run it from the command line with the following arguments:
+   - `--input_file`: Specifies the path for the input JSON file. By default, if only the filename is indicated, than the path is the Desktop folder.
+   - `--window_size`: Specifies the size of the moving window in minutes for computing the moving average.
+   - `--limit_date`: (Optional) Specifies the oldest date for computing the moving average. If not provided, the analysis starts from the earliest timestamp in the dataset.
+
+This command will compute the moving average with a window size of 10 minutes for the entire dataset, using the input file located at the Desktop:
+```
+python Translation_Challenge.py --input_file input_file.json --window_size 10
+```
+This command will compute the moving average with a window size of 20 minutes for the timestamp from May 1, 2024, onwards, using the input file located at /path/to/input_file.json:
+```
+python Translation_Challenge.py --input_file /path/to/input_file.json --window_size 20 --limit_date 2024-05-01
+```
