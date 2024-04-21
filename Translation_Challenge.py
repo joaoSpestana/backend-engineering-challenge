@@ -22,7 +22,7 @@ def get_parameters():
     try:
         time_window =int(args.window_size)
         if args.limit_date != -1:
-            limit_datetime = pd.to_datetime(str(args.limit_date) + " 00:00:00")
+            limit_datetime = pd.to_datetime(args.limit_date)
     except ValueError:
         sys.exit("Invalid inputs. Please confirm if the window_size or the limit_date are valid.")
 
