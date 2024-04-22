@@ -26,6 +26,7 @@
       pip install pandas
       ```
 
+
 ## Execution Guide:
 To use the script, go to the script location and run it from the command line with the following arguments:
    - `--input_file`: Specifies the path for the input JSON file. By default, if only the filename is indicated, than the path is the Desktop folder.
