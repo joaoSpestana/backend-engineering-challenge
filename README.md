@@ -1,7 +1,7 @@
 # Data Engineering Challenge
 
 ## Assumptions:
-1. The input file is expected to be in JSON format, where each line represents a valid JSON object with a timestamp and a duration.
+1. The input file is expected to be in JSON format, where each line represents a valid JSON object.
 2. Each JSON object should contain the following fields:
    - `"timestamp"`: A valid datetime string in the format `YYYY-MM-DD HH:MM:SS.ssssss`.
    - `"duration"`: A valid integer representing the duration of translation delivery in seconds.
