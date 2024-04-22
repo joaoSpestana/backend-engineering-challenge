@@ -20,7 +20,7 @@
 
 ## Requirements:
    - Python 3.x
-   - `pandas` library, which can be installed through the commmand:
+   - `pandas` library, which can be installed through the following commmand:
 
       ```
       pip install pandas
