@@ -15,7 +15,7 @@
 2. **Use of Pandas Package:**
    - Uses the pandas package for efficient data manipulation. The dataset is converted into a DataFrame, and the datetime column is set as the index for optimized filtering.
 3. **Output File Saving:**
-   - The script creates an "Outputs" directory on the desktop to save the output JSON file, ensuring organized output storage.
+   - The script creates an `Outputs` directory on the desktop to save the output JSON file, ensuring organized output storage.
 <br> <br>
 
 ## Requirements:
