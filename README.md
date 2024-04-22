@@ -25,7 +25,7 @@
       ```
       pip install pandas
       ```
-
+<br>
 
 ## Execution Guide:
 To use the script, go to the script location and run it from the command line with the following arguments:
@@ -41,7 +41,7 @@ This command will compute the moving average with a window size of 20 minutes fo
 ```
 python mov_avg_script.py --input_file /path/to/input_file.json --window_size 20 --limit_date 2024-05-01
 ```
-
+<br>
 
 ## Test Files:
 In the `Sample Data` directory, two test files have been provided for evaluating the functionality of the code:
