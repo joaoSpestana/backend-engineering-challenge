@@ -20,8 +20,11 @@
 
 ## Requirements:
    - Python 3.x
-   - `pandas` library
-<br> <br>
+   - `pandas` library, which can be installed through the commmand:
+
+      ```
+      pip install pandas
+      ```
 
 ## Execution Guide:
 To use the script, go to the script location and run it from the command line with the following arguments:
@@ -31,13 +34,13 @@ To use the script, go to the script location and run it from the command line wi
 
 This command will compute the moving average with a window size of 10 minutes for the entire dataset, using the input file located at the Desktop:
 ```
-python Translation_Challenge.py --input_file input_file.json --window_size 10
+python mov_avg_script.py --input_file input_file.json --window_size 10
 ```
 This command will compute the moving average with a window size of 20 minutes for the timestamp from May 1, 2024, onwards, using the input file located at /path/to/input_file.json:
 ```
-python Translation_Challenge.py --input_file /path/to/input_file.json --window_size 20 --limit_date 2024-05-01
+python mov_avg_script.py --input_file /path/to/input_file.json --window_size 20 --limit_date 2024-05-01
 ```
-<br>
+
 
 ## Test Files:
 In the `Sample Data` directory, two test files have been provided for evaluating the functionality of the code:
