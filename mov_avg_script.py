@@ -133,6 +133,7 @@ if __name__ == "__main__":
     end_datetime = file_events.index[-1].replace(second=0) + pd.Timedelta(minutes=1)
 
     if(limit_datetime == -1):
+        #If no limit date is defined the moving average will be computed for the entire dataset
         start_datime = file_events.index[0].replace(second=0)
     else:
         start_datime = limit_datetime
